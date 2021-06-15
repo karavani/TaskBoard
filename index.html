@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Indie+Flower&family=Pacifico&family=Pangolin&display=swap" rel="stylesheet">
+    <title>Task Board</title>
+</head>
+
+<body>
+    <h1>My Task Board</h1>
+    <div id="errorMessage" class="errorMessage"></div><br>
+    <div class="inputContainer">
+        <textarea placeholder="insert text here.." id="textBox" cols="20" rows="6" oninput="onInputInitiliazTask()"></textarea>
+        <br> <input id="dateInput" class="dateClass" type="date" oninput="onInputInitiliazTask()">
+        <br> <input id="timeInput" class="dateClass" type="time" oninput="onInputInitiliazTask()">
+        <br><input type="button" class="button" value="clear note" onclick="onEraseNote()">
+        <input id="button" class="button" type="button" value="submit note" onclick="onAddDiv()">
+
+    </div>
+    <div id="notesContainer">
+
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
